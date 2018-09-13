@@ -1,0 +1,17 @@
+.card {
+    margin: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+.completed {
+    background-color: rgb(124, 173, 26);
+}

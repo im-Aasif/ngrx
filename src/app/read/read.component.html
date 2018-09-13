@@ -1,0 +1,34 @@
+<!-- <div class="right" *ngIf="tutorials">
+  <h4>Tutorials</h4>
+  <ul>
+    <li (click)="deleteTutorial(i)" *ngFor="let tutorial of tutorials | async; let i = index">
+      <a [href]="tutorial.url" target="_blank"> {{ tutorial.name }}</a>
+    </li>
+  </ul>
+</div> -->
+<!-- 
+<div class="left" *ngIf="posts">
+  <button (click)="getPosts()">Get Posts</button>
+  <h4>Posts</h4>
+  <ul>
+    <li *ngFor="let post of posts | async">
+      <div>
+        {{post.title}}
+        <p>{{post.body}}</p>
+      </div>
+    </li>
+  </ul>
+</div> -->
+
+<div class="left" *ngIf="todos">
+  <button (click)="getTodos()">Get Todos</button>
+  <h4>Todos</h4>
+  <div 
+  *ngFor="let todo of todos | async" 
+  class="card" [class.completed]="todo.completed" 
+  (click)="onTodoClick(todo)">
+    <div class="card-content">
+      <p>{{todo.id}}. {{todo.title}}</p>
+    </div>
+  </div>
+</div>
